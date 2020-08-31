@@ -59,6 +59,10 @@ function performPrint (iframeElement, params) {
     } else {
       // Other browsers
       iframeElement.contentWindow.print()
+      if(Browser.isChrome()){
+        // chrome does not raise 'focus' event, hence it needs to be raised manually
+       window.dispatchEvent(new Event("focus"));
+      }      
     }
   } catch (error) {
     params.onError(error)
