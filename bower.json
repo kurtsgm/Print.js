@@ -1,5 +1,5 @@
 {
-  "name": "print-js",
+  "name": "@kurtsgm/print-js",
   "description": "A tiny javascript library to help printing from the web.",
   "main": "dist/print.js",
   "authors": [
